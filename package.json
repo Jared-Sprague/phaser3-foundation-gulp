@@ -1,0 +1,36 @@
+{
+    "name": "phaser3-foundation-gulp",
+    "version": "0.0.1",
+    "description": "A very simple example of a Phaser 3 game using a gulp build",
+    "main": "src/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Jared-Sprague/phaser3-foundation-gulp"
+    },
+    "keywords": [
+        "game",
+        "phaser"
+    ],
+    "author": "Jared Sprague",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Jared-Sprague/phaser3-foundation-gulp/issues"
+    },
+    "homepage": "https://github.com/Jared-Sprague/phaser3-foundation-gulp/#readme",
+    "scripts": {
+        "test": "npm run eslint",
+        "eslint": "eslint . --ext .ts",
+        "dev": "browser-sync start --server --serveStatic ./src --files './src/**/*.*' --directory --no-notify",
+        "start": "node run dev"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21",
+        "phaser": "~3.52.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.14",
+        "eslint": "^7.20.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-jsdoc": "^32.2.0"
+    }
+}
